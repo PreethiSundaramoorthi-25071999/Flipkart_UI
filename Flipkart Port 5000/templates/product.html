@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Flipkart UI</title>
+</head>
+<body>
+        <nav class="flex-div">
+            <div class="nav-left flex-div">
+                <img src="/static/images/Flipkart_logo.png" class="logo">
+            </div>
+            <div class="nav-middle flex-div">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for Products,Brands and More">
+                    <img src="/static/images/search.png">         
+                </div>
+            </div>
+            <div class="nav-right flex-div">
+                <div class="become-a-seller">
+                    <img src="/static/images/Become a seller.svg"><p>Become a Seller</p>
+                </div>
+                <div class="profile">
+                    <img src="/static/images/profile.png"><p>Sign in</p>
+                </div>
+                <div class="cart">
+                    <img src="/static/images/cart.svg"><p>Cart</p>
+                </div>
+                <div class="settings">
+                    <img src="/static/images/three dots.png">
+                </div>
+                <div class="logout-button">
+                    <a href="{{url_for('logout')}}">Logout</a>
+                </div>
+            </div>
+        </nav><br><br>
+        <!-- <img src="/static/images/Clean and Clear Morning energy facewash.png"> -->
+            {%for i in datum%}
+             <div class="full-data">
+                <div class="product-list">
+                    <div>
+                        <img src="{{i.Image}}" class="product-size">
+                    </div>
+                    <div class="product-description">
+                        <h2>{{i.Product_Name}}</h2><br>
+                        <p class="germ">.100% germ cleaner</p><br>
+                        <p class="clinically">.Clinically tested</p><br>
+                        <p class="vegan">.Completely Vegan</p><br>
+                        <p class="natural">.Natural Product</p><br>
+                        <p class="Dermatologically">.Dermatologically tested</p><br>
+                        <p class="suitable">.Suitable for all skin types</p><br>
+                        <p class="colours">.Zero Added Colours</p><br>
+                    </div>    
+                </div><br>
+                <div class="rate-price-size">
+                    <p>{{i.Price}}</p><br><br> 
+                    <p>Rating: {{i.Rating}}</p><br><br>
+                    <p>Quantity: {{i.Quantity}}</p><br><br>
+                    <img src="/static/images/flipkart assured.png" class="flipkart-assured">
+                </div>
+             </div>
+        {%endfor%}
+</body>
+</html>
+<!-- <img src="/static/images/flipkart assured.png" class="flipkart-assured"> -->

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Flipkart UI</title>
+</head>
+<body>
+    <!-- <div> -->
+        <nav class="flex-div">
+            <div class="nav-left flex-div">
+                <img src="/static/images/Flipkart_logo.png" class="logo">
+            </div>
+            <div class="nav-middle flex-div">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for Products,Brands and More">
+                    <img src="/static/images/search.png">         
+                </div>
+            </div>
+            <div class="nav-right flex-div">
+                <div class="become-a-seller">
+                    <img src="/static/images/Become a seller.svg"><p>Become a Seller</p>
+                </div>
+                <div class="profile">
+                    <img src="/static/images/profile.png"><p>Sign in</p>
+                </div>
+                <div class="cart">
+                    <img src="/static/images/cart.svg"><p>Cart</p>
+                </div>
+                <div class="settings">
+                    <img src="/static/images/three dots.png">
+                </div>
+                <div class="logout-button">
+                    <a href="{{url_for('logout')}}">Logout</a>
+                </div>
+            </div>
+        </nav>
+    
+        <nav class="stories">     
+            <div><img src="/static/images/top offers story.webp" alt=""><h1>Top offers</h1></div>
+            <div><img src="/static/images/mobiles story.webp" alt=""><h1>Mobiles&Tablets</h1></div>
+            <div><img src="/static/images/electronics story.webp" alt=""><h1>Electronics</h1></div>
+            <div><img src="/static/images/tv and appliances story.webp" alt=""><h1>Tv&Appliance</h1></div>
+            <div><img src="/static/images/fashion story.webp" alt=""><h1>Fashion</h1></div>
+            <!-- <div><img src="/static/images/Beauty story.webp" alt=""><h1>Beauty</h1><a href="{{url_for('home')}}">Beauty Products</a></div> -->
+            <div><a href="{{url_for('home')}}"><img src="/static/images/Beauty story.webp" alt=""><h1>Beauty</h1></a></div>
+            <div><img src="/static/images/home & kitchen story.webp" alt=""><h1>Home&Kitchen</h1></div>
+            <div><img src="/static/images/furniture story.webp" alt=""><h1>Furniture</h1></div>
+            <div><img src="/static/images/flights story.webp" alt=""><h1>Flights</h1></div>
+            <div><img src="/static/images/grocery story.webp" alt=""><h1>Grocery</h1></div>
+        </nav>
+     
+        <div>
+            <img src="/static/images/big diwali sale.webp">
+        </div>
+    
+        <div>
+            <img src="/static/images/sbi card.webp">
+        </div>
+    
+        <nav class="best-stories">
+            <div><h1>Best Mobile</h1><img src="/static/images/Realme 11 pro plus mobile.png" alt=""><p>Realme 11 pro plus 5G</p><h1>from Rs.24,999*</h1></div>
+            <div><img src="/static/images/Vivo T2 5G.png" alt=""><p>Vivo T2 5G</p><h1>incl of offers</h1></div>
+            <div><img src="/static/images/Nothing phone 2.png" alt=""><p>Nothing Phone 2</p><h1>incl of offers</h1></div>
+            <div><img src="/static/images/Realme 11 5G.png" alt=""><p>Realme 11 5G</p><h1>incl of offers</h1></div>
+            <div><img src="/static/images/Motorola edge 40.png" alt=""><p>Motorola edge 40</p><h1>incl of offers</h1></div>
+            <div><img src="/static/images/Vivo T2 x 5G.png" alt=""><p>Vivo T2 x 5G</p><h1>incl of offers</h1></div>
+            <div><img src="/static/images/boat airdopes.png" alt="" class="boat-airdopes"></div>
+        </nav>
+    
+        <nav class="ad-highlights">
+            <div><img src="/static/images/samsung f14 5g.webp"></div>
+            <div><img src="/static/images/Biggest deals of the year.webp"></div>
+            <div><img src="/static/images/Asus vivobook.webp"></div>
+        </nav>
+    
+        <nav class="Top-deals">
+            <div><h1>Top Deals</h1><img src="/static/images/Shoe.png"><p>Best Sellers</p><h1>Under 2999</h1></div>
+            <div><img src="/static/images/white shoe.png"><p>White Shoe,Snickers...</p><h1>Under 599</h1></div>
+            <div><img src="/static/images/Sketchers.png"><p>Sketchers</p><h1>Min.60% off</h1></div>
+            <div><img src="/static/images/Vishudh slipper.png"><p>Vishudh & Tokyo Talkies</p><h1>Under 399</h1></div>
+            <div><img src="/static/images/Tokyo talkies.clovia.png"><p>Tokyo Talkies,Clovia</p><h1>Min 65% off</h1></div>
+            <div><img src="/static/images/Kids Tees.png"><p>Kids Tshirt,Tops..</p><h1>Min 70% off</h1></div>
+            <div><img src="/static/images/Shoe.png"><p>Bata</p><h1>Under 300</h1></div>
+        </nav>
+    
+        <nav class="ad-highlights1">
+            <div><img src="/static/images/vivo pink ads.webp"></div>
+            <div><img src="/static/images/indigo pink.webp"></div>
+            <div><img src="/static/images/oppo reno10 5G.webp"></div>
+        </nav>
+</body>
+</html>

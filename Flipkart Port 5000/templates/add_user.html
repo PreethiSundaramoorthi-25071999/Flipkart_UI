@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Flipkart UI</title>
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="/static/images/Flipkart_logo.png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box">
+                <input type="text" placeholder="Search for Products,Brands and More">
+                <img src="/static/images/search.png">         
+            </div>
+        </div>
+        <div class="nav-right flex-div">
+            <div class="become-a-seller">
+                <img src="/static/images/Become a seller.svg"><p>Become a Seller</p>
+            </div>
+            <div class="cart">
+                <img src="/static/images/cart.svg"><p>Cart</p>
+            </div>
+            <div class="settings">
+                <img src="/static/images/three dots.png">
+            </div>
+        </div>
+    </nav>
+    <nav class="stories">     
+        <div><img src="/static/images/top offers story.webp" alt=""><h1>Top offers</h1></div>
+        <div><img src="/static/images/mobiles story.webp" alt=""><h1>Mobiles&Tablets</h1></div>
+        <div><img src="/static/images/electronics story.webp" alt=""><h1>Electronics</h1></div>
+        <div><img src="/static/images/tv and appliances story.webp" alt=""><h1>Tv&Appliance</h1></div>
+        <div><img src="/static/images/fashion story.webp" alt=""><h1>Fashion</h1></div>
+        <div><img src="/static/images/Beauty story.webp" alt=""><h1>Beauty</h1></div>
+        <div><img src="/static/images/home & kitchen story.webp" alt=""><h1>Home&Kitchen</h1></div>
+        <div><img src="/static/images/furniture story.webp" alt=""><h1>Furniture</h1></div>
+        <div><img src="/static/images/flights story.webp" alt=""><h1>Flights</h1></div>
+        <div><img src="/static/images/grocery story.webp" alt=""><h1>Grocery</h1></div>
+    </nav><br>
+    <div class="middle-part">    
+    <div class="login-page-pic">
+        <img src="/static/images/login page.png" alt="" />
+    </div>
+      <div class="right-content">
+        <form method="post">
+          <input type="text" name="Name" placeholder="Enter your Name" class="adduser-name"><br><br>
+    
+          <input type="number" name="Password" placeholder="Enter your Password" class="adduser-password"><br><br><br>
+    
+          <input type="submit" class="sign-up" value="Sign Up">
+        </form>
+      </div>
+    </div>
+
+</body>
+</html>
+
+
+<!-- <div class="middle-part">
+    <div class="login-page-pic">
+        <img src="/static/images/login page.png">
+    </div>
+    <div class="right-content">
+        <form method="post">
+          <label for="Name">Name</label>
+          <input type="text" name="Name" placeholder="Enter your Name"><br><br>
+    
+          <label for="Password">Password</label>
+          <input type="number" name="Password" placeholder="Enter your Password"><br><br>
+    
+          <input type="submit" class="submit" value="Sign in"><br><br>
+
+          <a href="{{url_for('add_user')}}">Not an User?</a>
+        </form><br><br>
+    </div>
+</div> -->
